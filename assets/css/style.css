@@ -1,0 +1,112 @@
+:root {
+    --color-primary: #052f5f;    /* Berkeley Blue */
+    --color-secondary: #0092d1;  /* Celestial Blue */
+    --color-accent: #06a77d;     /* Jungle Green */
+    --color-highlight: #d5c67a;  /* Citron */
+    --color-warning: #f1a208;    /* Gamboge */
+    --transition: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    padding: 1rem 2rem;
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background var(--transition);
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a:focus {
+    background: var(--color-highlight);
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--color-warning);
+    cursor: pointer;
+  }
+  
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--color-secondary);
+    color: white;
+  }
+  
+  .hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background: var(--color-secondary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile‑first: show menu icon, hide links */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: var(--color-primary);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
