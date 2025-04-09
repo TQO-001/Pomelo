@@ -1,40 +1,74 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LaughTale Responsive Site</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">LaughTale</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
-        ☰
-      </button>
-    </nav>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LaughTale Responsive Site</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style-form.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">LaughTale</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                    ☰
+                </button>
+            </nav>
+        </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to LaughTale</h1>
-      <p>Your whimsical yet professional IT partner.</p>
-    </section>
+        <main>
+            <section class="hero">
+                <h1 class="invoice-heading">Invoice</h1>
+                <div class="logo-container"></div>
 
-    <!-- Add more sections here -->
-  </main>
+                <div class="details-container">
+                    <div class="business-details-container"></div>
+                    <div class="customer-details-container"></div>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 LaughTale. All rights reserved.</p>
-  </footer>
+                <div class="invoice-details"></div>
 
-  <script src="assets/js/script.js"></script>
-</body>
+                <div class="description">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Item</th>
+                          <th>Quantity</th>
+                          <th>Unit</th>
+                          <th>Price</th>
+                          <th>VAT</th>
+                          <th>Total <span class="currency">(R)</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>1</td>
+                          <td></td>
+                          <td>0</td>
+                          <td>0</td>
+                          <td>0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <!-- Add more sections here -->
+        </main>
+
+        <footer>
+            <p>&copy; 2025 LaughTale. All rights reserved.</p>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
