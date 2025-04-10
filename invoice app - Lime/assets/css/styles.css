@@ -1,0 +1,135 @@
+:root {
+    /* Fonts */
+    --main-font: "Montserrat Alternates", sans-serif;
+    --main-weight: 400;
+    --main-font-style: normal;
+
+    /* Borders */
+    --bdRad: 1em; 
+    --main-bd: 0.15em solid var(--clr-border);
+    --main-bd: 0.15em solid var(--clr-border);
+    --form-bd: 0.15em solid var(--clr-border);
+
+    /* Color Palette */
+    --clr-primary: #4CAF50;
+    --clr-primary-hover: #45a049;
+    --clr-primary-active: #000000;
+    --clr-background: #f4f4f4;
+    --clr-surface: #ffffff;
+    --clr-text: #444444;
+    --clr-border: #000000;
+    --clr-border-valid: var(--clr-primary);
+    --clr-border-invalid: #ff5100;
+    --clr-link: var(--clr-primary);
+    --clr-link-hover: var(--clr-primary-hover);
+    --clr-link-active: var(--clr-primary-active);
+
+    /* Box shadow */
+    --box-shadow-outline: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px var(--clr-border);
+
+      /* Neo-Brutalist Box Shadow */
+    --neo-shadow: 0.4em 0.4em 0 0 var(--clr-border);
+    --neo-shadow-hover: 0.3em 0.3em 0 0 var(--clr-border);
+    --neo-shadow-input: 0.2em 0.2em 0 0 var(--clr-border);
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--clr-background);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--clr-primary);
+    color: white;
+    padding: 1.25em; /* 20px */
+    text-align: center;
+}
+
+#login-section, #login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-section {
+    max-width: 25em;
+    margin: 5em auto;
+    padding: 2em;
+    background-color: var(--clr-surface);
+    border-radius: var(--bdRad);
+    border: var(--main-bd);
+    box-shadow: var(--neo-shadow);
+}
+
+#login-form {
+    max-width: 100%;
+}
+
+    input,
+    button {
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 1.01em;
+    }
+
+    .input-field {
+        width: 115%;
+        padding: 0.625em;   
+        margin: 0.625em 0;  
+        border-radius: var(--bdRad);
+        border: var(--form-bd);
+        box-shadow: var(--neo-shadow-input);
+    }
+
+    .password-container {
+        display: flex;
+    }
+
+    .password-container input {
+        flex: 1;
+        border: none;
+    }
+
+    .password-container i {
+        flex: 1;
+        text-align: right;
+        align-content: center;
+    }
+
+button {
+    background-color: var(--clr-primary);
+    color: white;
+    padding: 0.625em;
+    margin: 0.5em;   
+    width: 100%;
+    border: none;
+    border-radius: var(--bdRad);
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: var(--clr-primary-hover);
+        box-shadow: var(--box-shadow-outline);
+    }
+
+    button:active{
+        background-color: var(--clr-primary-active);
+    }
+
+.signup-prompt {
+    color: var(--clr-text);
+}
+
+p a {
+    color: var(--clr-link);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    p a:hover,
+    p a:active {
+        color: var(--clr-link-hover);
+    }
